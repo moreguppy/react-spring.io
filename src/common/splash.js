@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoSVG from './splash/logo-svg'
-import ScrollIndicator from './splash/scroll-indicator'
 
 export default function Splash() {
   return (
@@ -12,11 +11,9 @@ export default function Splash() {
             <Title>react-spring</Title>
             <Tagline>bring your components to life with simple spring animation primitives</Tagline>
             <QuickNav>
-              <a href="#">examples</a>
-              <a href="#">documentation</a>
-              <a href="https://github.com/react-spring/react-spring" target="_blank">
-                source
-              </a>
+              <a href="https://react-spring.surge.sh/#/examples">examples</a>
+              <a href="https://react-spring.surge.sh">documentation</a>
+              <a href="https://github.com/react-spring/react-spring">source</a>
             </QuickNav>
           </TitleContainer>
         </Column>
@@ -26,7 +23,6 @@ export default function Splash() {
           </LogoContainer>
         </Column>
       </Container>
-      <ScrollIndicator />
     </>
   )
 }
@@ -36,12 +32,11 @@ const Container = styled.div`
   background: #363645;
   color: white;
   width: 100%;
-  height: calc(100% - 100px);
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: space-around;
   justify-content: center;
-  border-radius: 0 0 20px 20px;
   overflow: hidden;
 
   background-size: 40px 40px;
